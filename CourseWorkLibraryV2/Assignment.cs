@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace CourseWorkLibraryV2
 {
-    class Assignment
+    public class Assignment
     {
         #region Member Variables 
         //Member Variables 

@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 namespace CourseWorkLibraryV2
 {
     //Class Created for testing
-    class CourseWorkUnitTesting
+    public class CourseWorkUnitTesting
     {
         #region Methods
         public void UnitTestCategory()
