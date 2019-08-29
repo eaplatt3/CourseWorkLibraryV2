@@ -23,32 +23,19 @@ namespace CourseWorkLibraryV2
         #region Methods
         public void UnitTestCategory()
         {
-            string result;         
 
             Category c = new Category();
-
-            c.Name = "Billy";
-            c.Percentage = 100;
-
-            if(c.Name != "Billy")
-            {
-                result = "Fail";
-            }
-
-            if (c.Percentage != 100)
-            {
-                result = "Fail";
-            }
-            else
-                result = "Pass";
+            c.Name = "Pass";
+            Console.WriteLine(c.Name);
         }
 
-        public void UnitTestAssignment()
-        {
-            //TO DO: declare instance of assigment
-            //       perform testing on the properties
-            //       print pass/fail message
-        }
-        #endregion
+            public void UnitTestAssignment()
+            {
+                //TO DO: declare instance of assigment
+                //       perform testing on the properties
+                //       print pass/fail message
+            }
+            #endregion
+        
     }
 }
