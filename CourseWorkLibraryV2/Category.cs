@@ -68,8 +68,8 @@ namespace CourseWorkLibraryV2
         {
             string aDesc;
 
-            aDesc = "Class Assigment has 3 Member Variables" +
-                "name, description & categoryName that are all strings";
+            aDesc = "Class Category has 2 Member Variables" +
+                "name & percentage, name is a string & percentage is a double";
 
             Console.WriteLine(aDesc);
         }
