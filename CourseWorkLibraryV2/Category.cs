@@ -64,7 +64,15 @@ namespace CourseWorkLibraryV2
         #endregion
 
         #region Methods
-        //To DO: ToString method
+        public void toString()
+        {
+            string aDesc;
+
+            aDesc = "Class Assigment has 3 Member Variables" +
+                "name, description & categoryName that are all strings";
+
+            Console.WriteLine(aDesc);
+        }
 
         #endregion
     }
