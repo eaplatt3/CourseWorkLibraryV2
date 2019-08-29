@@ -23,9 +23,24 @@ namespace CourseWorkLibraryV2
         #region Methods
         public void UnitTestCategory()
         {
-            //TO DO: declare instance of category
-            //       perform testing on the properties
-            //       print pass/fail message
+            string result;         
+
+            Category c = new Category();
+
+            c.Name = "Billy";
+            c.Percentage = 100;
+
+            if(c.Name != "Billy")
+            {
+                result = "Fail";
+            }
+
+            if (c.Percentage != 100)
+            {
+                result = "Fail";
+            }
+            else
+                result = "Pass";
         }
 
         public void UnitTestAssignment()
