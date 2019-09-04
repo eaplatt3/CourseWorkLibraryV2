@@ -25,8 +25,9 @@ namespace CourseWorkLibraryV2
         {
 
             Category c = new Category();
-            c.Name = "Pass";
-            Console.WriteLine(c.Name);
+            bool UnitTestCategory = c.UnitTestCategory("bill");
+            bool UnitTestCategory = c.UnitTestCategory(20);
+
         }
 
             public void UnitTestAssignment()
