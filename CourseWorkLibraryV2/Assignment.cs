@@ -77,6 +77,11 @@ namespace CourseWorkLibraryV2
         #endregion
 
         #region Methods
+
+        public override string ToString()
+        {
+            return Name.ToString() + "," + Name;
+        }
         public void toString()
         {
             string aDesc;

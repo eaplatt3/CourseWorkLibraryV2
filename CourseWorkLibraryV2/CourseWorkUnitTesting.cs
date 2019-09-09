@@ -25,7 +25,8 @@ namespace CourseWorkLibraryV2
         {
 
             Category c = new Category();
-            bool UnitTestCategory = c.UnitTestCategory("bill");
+            c.Name = "BILL";
+            bool UnitTestCategory = c.Name = "Bill";
             bool UnitTestCategory = c.UnitTestCategory(20);
 
         }
