@@ -25,19 +25,80 @@ namespace CourseWorkLibraryV2
         {
 
             Category c = new Category();
-            c.Name = "BILL";
-            bool UnitTestCategory = c.Name = "Bill";
-            bool UnitTestCategory = c.UnitTestCategory(20);
+            string sTestName = "bill";
+            double dTestPercentage = 50.5;
+            c.Name = sTestName;
+
+            //Test if Name is being Called
+            if (c.Name == sTestName)
+            {
+                Console.WriteLine("Category Name Property: Pass");
+            }
+            else
+            {
+                Console.WriteLine("Category Name Property: Fail");
+            }
+
+            c.Percentage = dTestPercentage;
+
+            //Test if Percentage is being Called
+            if(c.Percentage == dTestPercentage)
+            {
+                Console.WriteLine("Category Percentage Property: Pass");
+            }
+            else
+            {
+                Console.WriteLine("Category Percentage Property: Fail");
+            }
 
         }
 
-            public void UnitTestAssignment()
+        public void UnitTestAssignment()
+        {
+            Assignment a = new Assignment();
+
+            string sTestName = "Mary";
+            string sTestDescription = "There is a Description";
+            string sTestCategoryName = "Name of Category";
+
+            a.Name = sTestName;
+
+            //Test if Name is being Called
+            if(a.Name == sTestName)
             {
-                //TO DO: declare instance of assigment
-                //       perform testing on the properties
-                //       print pass/fail message
+                Console.WriteLine("Assigment Name Property: Pass");
             }
-            #endregion
+            else
+            {
+                Console.WriteLine("Assigment Name Property: Fail");
+            }
+
+            a.Description = sTestDescription;
+
+            //Test is Description is being called
+            if(a.Description == sTestDescription)
+            {
+                Console.WriteLine("Assigment Description Property: Pass");
+            }
+            else
+            {
+                Console.WriteLine("Assigment Description Property: Fail");
+            }
+
+            a.CategoryName = sTestCategoryName;
+
+            //Checks if CategoryName is being called
+            if(a.CategoryName == sTestCategoryName)
+            {
+                Console.WriteLine("Assigment CategoryName Property: Pass");
+            }
+            else
+            {
+                Console.WriteLine("Assigment CategoryName Property: Fail");
+            }
+
+        }
+        #endregion
         
     }
 }

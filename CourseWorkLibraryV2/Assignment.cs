@@ -82,7 +82,7 @@ namespace CourseWorkLibraryV2
         {
             return Name.ToString() + "," + Name;
         }
-        public void toString()
+       /* public void toString()
         {
             string aDesc;
 
@@ -90,7 +90,7 @@ namespace CourseWorkLibraryV2
                 "name, description & categoryName that are all strings";
 
             Console.WriteLine(aDesc);
-        }
+        }*/
         #endregion
     }
 }
