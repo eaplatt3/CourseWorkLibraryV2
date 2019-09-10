@@ -80,17 +80,8 @@ namespace CourseWorkLibraryV2
 
         public override string ToString()
         {
-            return Name.ToString() + "," + Name;
+            return Name.ToString() + "," + Name + "," + Description + "," + CategoryName;
         }
-       /* public void toString()
-        {
-            string aDesc;
-
-            aDesc = "Class Assigment has 3 Member Variables" +
-                "name, description & categoryName that are all strings";
-
-            Console.WriteLine(aDesc);
-        }*/
         #endregion
     }
 }

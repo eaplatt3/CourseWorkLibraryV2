@@ -64,14 +64,9 @@ namespace CourseWorkLibraryV2
         #endregion
 
         #region Methods
-        public void toString()
+        public override string ToString()
         {
-            string aDesc;
-
-            aDesc = "Class Category has 2 Member Variables" +
-                "name & percentage, name is a string & percentage is a double";
-
-            Console.WriteLine(aDesc);
+            return Name.ToString() + "," + Name + "," + Percentage;
         }
 
         #endregion
