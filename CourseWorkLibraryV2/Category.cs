@@ -64,6 +64,7 @@ namespace CourseWorkLibraryV2
         #endregion
 
         #region Methods
+        //Method to overide ToString()
         public override string ToString()
         {
             return Name.ToString() + "," + Name + "," + Percentage;
