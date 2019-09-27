@@ -21,6 +21,11 @@ namespace CourseWorkLibraryV2
     public class CourseWorkUnitTesting
     {
         #region Methods
+        //*****************************************************
+        // Method: UnitTestCategory
+        //
+        // Purpose: To Check if Name & Percentage is Called.
+        //*****************************************************
         public void UnitTestCategory()
         {
 
@@ -53,6 +58,11 @@ namespace CourseWorkLibraryV2
 
         }
 
+        //*******************************************************************
+        // Method: UnitTestAssigment
+        //
+        // Purpose: To Check if Name, Description & CategoryName is Called.
+        //********************************************************************
         public void UnitTestAssignment()
         {
             Assignment a = new Assignment();

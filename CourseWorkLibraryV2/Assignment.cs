@@ -77,7 +77,11 @@ namespace CourseWorkLibraryV2
         #endregion
 
         #region Methods
-        //Method to overide ToString()
+        //*****************************************************
+        // Method: Overrided ToString
+        //
+        // Purpose: To return Name, Description & Percentage.
+        //*****************************************************
         public override string ToString()
         {
             return Name.ToString() + "," + Name + "," + Description + "," + CategoryName;
