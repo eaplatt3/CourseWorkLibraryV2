@@ -22,3 +22,9 @@ C:\Users\eapla\Source\Repos\eaplatt3\CourseWorkLibraryV2\CourseWorkLibraryV2\obj
 C:\Users\eapla\Source\Repos\eaplatt3\CourseWorkLibraryV2\CourseWorkLibraryV2\obj\Debug\CourseWorkLibraryV2.csproj.CoreCompileInputs.cache
 C:\Users\eapla\Source\Repos\eaplatt3\CourseWorkLibraryV2\CourseWorkLibraryV2\obj\Debug\CourseWorkLibraryV2.dll
 C:\Users\eapla\Source\Repos\eaplatt3\CourseWorkLibraryV2\CourseWorkLibraryV2\obj\Debug\CourseWorkLibraryV2.pdb
+C:\Users\eplatt\Documents\School Programs\CourseWorkLibraryV2\CourseWorkLibraryV2\bin\Debug\CourseWorkLibraryV2.dll
+C:\Users\eplatt\Documents\School Programs\CourseWorkLibraryV2\CourseWorkLibraryV2\bin\Debug\CourseWorkLibraryV2.pdb
+C:\Users\eplatt\Documents\School Programs\CourseWorkLibraryV2\CourseWorkLibraryV2\obj\Debug\CourseWorkLibraryV2.csprojAssemblyReference.cache
+C:\Users\eplatt\Documents\School Programs\CourseWorkLibraryV2\CourseWorkLibraryV2\obj\Debug\CourseWorkLibraryV2.csproj.CoreCompileInputs.cache
+C:\Users\eplatt\Documents\School Programs\CourseWorkLibraryV2\CourseWorkLibraryV2\obj\Debug\CourseWorkLibraryV2.dll
+C:\Users\eplatt\Documents\School Programs\CourseWorkLibraryV2\CourseWorkLibraryV2\obj\Debug\CourseWorkLibraryV2.pdb

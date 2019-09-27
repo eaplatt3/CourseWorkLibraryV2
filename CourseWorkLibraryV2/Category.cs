@@ -31,7 +31,8 @@ namespace CourseWorkLibraryV2
         //Constructor
         public Category()
         {
-
+            name = "Homework";
+            percentage = 35;
         }
 
         #region C# Properties

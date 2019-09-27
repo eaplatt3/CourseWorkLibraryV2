@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 namespace CourseWorkLibraryV2
 {
     [DataContract]
-    class Submission
+    public class Submission
     {
         #region Member Variables 
         //Member Variables 

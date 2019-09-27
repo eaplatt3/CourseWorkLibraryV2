@@ -31,7 +31,10 @@ namespace CourseWorkLibraryV2
         //Constructor
         public Assignment()
         {
-
+            name = "Homework 2";
+            description = "Create the submission class. " +
+                "Add serialization to all classes.";
+            categoryName = "Homework";
         }
 
         #region C# Properties
