@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 //////////////////////////////////////////////////////////////
-// File: Assignment.cs                                      //
+// File: Submission.cs                                      //
 //                                                          //
-// Purpose: Contains the class definitions for Assignment   //
+// Purpose: Contains the class definitions for Submission   //
 //                                                          //
 // Written By: Earl Platt III                               //
 //                                                          //
@@ -19,54 +19,26 @@ using System.Threading.Tasks;
 namespace CourseWorkLibraryV2
 {
     [DataContract]
-    public class Assignment
+    class Submission
     {
         #region Member Variables 
         //Member Variables 
-        private string name;
-        private string description;
         private string categoryName;
+        private string assignmentName;
+        private double grade;
         #endregion
 
-        //Constructor
-        public Assignment()
+        //Constructor 
+        public Submission()
         {
-
+            categoryName = "Homework";
+            assignmentName = "Homework 2";
+            grade = 90;
         }
 
         #region C# Properties
-        //Get & Set using C# properties 
-        [DataMember(Name = "name")]
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-
-            }
-        }
-
-        [DataMember(Name = "description")]
-        public string Description
-        {
-            get
-            {
-                return description;
-            }
-
-            set
-            {
-                description = value;
-            }
-
-        }
-
-        [DataMember(Name = "catergoryname")]
+        //Using C# Properties with string
+        [DataMember(Name = "categoryname")]
         public string CategoryName
         {
             get
@@ -79,18 +51,49 @@ namespace CourseWorkLibraryV2
                 categoryName = value;
             }
         }
+
+        [DataMember(Name = "assignmentname")]
+        public string AssignmentName
+        {
+            get
+            {
+                return assignmentName;
+            }
+
+            set
+            {
+                assignmentName = value;
+            }
+        }
+
+        //Using C# Properties with double 
+        [DataMember(Name = "grade")]
+        public double Grade
+        {
+            get
+            {
+                return grade;
+            }
+
+            set
+            {
+                grade = value;
+            }
+        }
+
         #endregion
 
         #region Methods
-        //*****************************************************
+        //***********************************************************
         // Method: Overrided ToString
         //
-        // Purpose: To return Name, Description & Percentage.
-        //*****************************************************
+        // Purpose: To return categoryName, assignmentName & grade.
+        //***********************************************************
         public override string ToString()
         {
-            return Name.ToString() + "," + Name + "," + Description + "," + CategoryName;
+            return categoryName.ToString() + "," + categoryName + "," + assignmentName + "," + grade;
         }
+
         #endregion
     }
 }

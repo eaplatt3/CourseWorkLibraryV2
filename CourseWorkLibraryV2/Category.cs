@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,6 +19,7 @@ using System.Threading.Tasks;
 namespace CourseWorkLibraryV2
 {
     //First Class Category takes name and percent variables
+    [DataContract]
     public class Category
     {
         #region Private Member Variables
@@ -34,6 +36,7 @@ namespace CourseWorkLibraryV2
 
         #region C# Properties
         //Using C# Properties with string
+        [DataMember(Name = "name")]
         public string Name
         {
             get
@@ -48,6 +51,7 @@ namespace CourseWorkLibraryV2
         }
 
         //Using C# Properties with double 
+        [DataMember(Name = "percentage")]
         public double Percentage
         {
             get
