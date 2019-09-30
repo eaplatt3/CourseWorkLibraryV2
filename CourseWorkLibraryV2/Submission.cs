@@ -28,7 +28,11 @@ namespace CourseWorkLibraryV2
         private double grade;
         #endregion
 
-        //Constructor 
+        //*****************************************************
+        // Method: Submission Constructor
+        //
+        // Purpose: To Create Object 
+        //*****************************************************
         public Submission()
         {
             categoryName = "Homework";
@@ -91,7 +95,7 @@ namespace CourseWorkLibraryV2
         //***********************************************************
         public override string ToString()
         {
-            return categoryName.ToString() + "," + categoryName + "," + assignmentName + "," + grade;
+            return categoryName.ToString() +  " , " + assignmentName + " , " + grade;
         }
 
         #endregion

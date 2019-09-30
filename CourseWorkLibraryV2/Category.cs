@@ -28,7 +28,11 @@ namespace CourseWorkLibraryV2
         private double percentage;
         #endregion
 
-        //Constructor
+        //*****************************************************
+        // Method: Category Constructor
+        //
+        // Purpose: To Create Object 
+        //*****************************************************
         public Category()
         {
             name = "Homework";
@@ -76,7 +80,7 @@ namespace CourseWorkLibraryV2
         //********************************************
         public override string ToString()
         {
-            return Name.ToString() + "," + Name + "," + Percentage;
+            return Name.ToString() + ", " + Percentage;
         }
 
         #endregion

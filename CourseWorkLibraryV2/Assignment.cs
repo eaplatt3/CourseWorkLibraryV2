@@ -28,7 +28,11 @@ namespace CourseWorkLibraryV2
         private string categoryName;
         #endregion
 
-        //Constructor
+        //*****************************************************
+        // Method: Assigment Constructor
+        //
+        // Purpose: To Create Object 
+        //*****************************************************
         public Assignment()
         {
             name = "Homework 2";
@@ -92,7 +96,7 @@ namespace CourseWorkLibraryV2
         //*****************************************************
         public override string ToString()
         {
-            return Name.ToString() + "," + Name + "," + Description + "," + CategoryName;
+            return Name.ToString() + ", " + Description  + CategoryName;
         }
         #endregion
     }
