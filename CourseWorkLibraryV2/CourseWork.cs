@@ -95,6 +95,38 @@ namespace CourseWorkLibraryV2
 
         #endregion
 
+        #region
+        //*****************************************************
+        // Method: FindSubmission
+        //
+        // Purpose: To return a submission by name
+        //*****************************************************
+        public Submission FindSubmission(string sub)
+        {
+            sub = m_Name;
 
+            if (sub == m_Name)
+            {
+                return;
+            }
+            else
+                return "Name Not Found";
+        }
+
+        //*****************************************************
+        // Method: CalculateGrade
+        //
+        // Purpose: To Calculate Grade Based on weight
+        //*****************************************************
+        public double CalculateGrade(double grade)
+        {
+            Category cat = new Category();
+
+
+        }
+
+
+
+        #endregion
     }
 }
