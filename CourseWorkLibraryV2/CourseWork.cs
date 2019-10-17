@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,6 +19,7 @@ using System.Threading.Tasks;
 
 namespace CourseWorkLibraryV2
 {
+    [DataContract] 
     class CourseWork
     {
         #region Member Variables 
@@ -33,13 +35,17 @@ namespace CourseWorkLibraryV2
         //
         // Purpose: To Create Object 
         //*****************************************************
-        public CourseWork(string Name, Category Categories, Assignment Assigments, Submission Submissions)
+        public CourseWork()
         {
             m_Name = Name;
+            categories = new List<Category>();
+            assignments = new List<Assignment>();
+            submissions = new List<Submission>();
         }
 
         #region C# Properties
         //Get & Set using C# properties 
+        [DataMember(Name = "Name")]
         public string Name
         {
             get
@@ -54,6 +60,7 @@ namespace CourseWorkLibraryV2
             }
         }
 
+        [DataMember(Name = "Catergories")]
         public List<Category> Categories
         {
             get
@@ -67,6 +74,7 @@ namespace CourseWorkLibraryV2
             }
         }
 
+        [DataMember(Name = "Assignments")]
         public List<Assignment> Assigments
         {
             get
@@ -80,6 +88,7 @@ namespace CourseWorkLibraryV2
             }
         }
 
+        [DataMember(Name = "Submission")]
         public List<Submission> Submissions
         {
             get
@@ -95,22 +104,26 @@ namespace CourseWorkLibraryV2
 
         #endregion
 
-        #region
+        #region Methods
         //*****************************************************
         // Method: FindSubmission
         //
         // Purpose: To return a submission by name
         //*****************************************************
-        public Submission FindSubmission(string sub)
+        public Submission FindSubmission(string s)
         {
-            sub = m_Name;
+            Submission sub = new Submission();
 
-            if (sub == m_Name)
+            for(int i = 0; i < submissions.Count(); i++)
             {
-                return;
+                if (submissions[i].AssignmentName == s)
+                {
+                    sub.AssignmentName = submissions[i].AssignmentName;
+                    sub.CategoryName = submissions[i].CategoryName;
+                    sub.Grade = submissions[i].Grade;
+                }
             }
-            else
-                return "Name Not Found";
+            return sub;
         }
 
         //*****************************************************
@@ -120,9 +133,50 @@ namespace CourseWorkLibraryV2
         //*****************************************************
         public double CalculateGrade(double grade)
         {
-            Category cat = new Category();
+            double testGrade = 0;
+            double hwGrade = 0;
+            double quizGrade = 0;
+            double labGrade = 0;
+            int testCtn = 0;
+            int hwCtn = 0;
+            int quizCtn = 0;
+            int labCtn = 0;
+            
+            for(int i = 0; i < submissions.Count(); i++)
+            {
+                if(submissions[i].CategoryName == "Exams")
+                {
+                    testGrade += submissions[i].Grade;
+                    testCtn++;
+                }
 
+                if(submissions[i].CategoryName == "Homework")
+                {
+                    hwGrade += submissions[i].Grade;
+                    hwCtn++;
+                }
 
+                if(submissions[i].CategoryName == "Quizzes")
+                {
+                    quizGrade += submissions[i].Grade;
+                    quizCtn++;
+                }
+
+                if(submissions[i].CategoryName == "Labs")
+                {
+                    labGrade += submissions[i].Grade;
+                    labCtn++;
+                }
+            }
+
+            testGrade = testGrade / testCtn;
+            hwGrade = hwGrade / hwCtn;
+            quizGrade = quizGrade / quizCtn;
+            labGrade = labGrade / labCtn;
+
+            grade = testGrade + hwGrade + quizGrade + labGrade;
+
+            return grade;
         }
 
 
