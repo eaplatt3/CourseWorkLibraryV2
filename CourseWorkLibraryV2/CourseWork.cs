@@ -24,7 +24,7 @@ namespace CourseWorkLibraryV2
     {
         #region Member Variables 
         //Member Variables
-        string m_Name;
+        string courseName;
         List<Category> categories;
         List<Assignment> assignments;
         List<Submission> submissions;
@@ -37,7 +37,7 @@ namespace CourseWorkLibraryV2
         //*****************************************************
         public CourseWork()
         {
-            m_Name = Name;
+            courseName = " ";
             categories = new List<Category>();
             assignments = new List<Assignment>();
             submissions = new List<Submission>();
@@ -45,17 +45,17 @@ namespace CourseWorkLibraryV2
 
         #region C# Properties
         //Get & Set using C# properties 
-        [DataMember(Name = "Name")]
-        public string Name
+        [DataMember(Name = "CourseName")]
+        public string CourseName
         {
             get
             {
-                return m_Name;
+                return courseName;
             }
 
             set
             {
-                m_Name = value;
+                courseName = value;
 
             }
         }
@@ -187,7 +187,7 @@ namespace CourseWorkLibraryV2
 
         public override string ToString()
         {
-            return m_Name.ToString() + " , " + categories + " , " + assignments + " , " + submissions;
+            return courseName.ToString() + " , " + categories + " , " + assignments + " , " + submissions;
         }
 
 
