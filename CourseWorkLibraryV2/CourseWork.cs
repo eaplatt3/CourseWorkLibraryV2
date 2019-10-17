@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 namespace CourseWorkLibraryV2
 {
     [DataContract] 
-    class CourseWork
+    public class CourseWork
     {
         #region Member Variables 
         //Member Variables
@@ -179,6 +179,16 @@ namespace CourseWorkLibraryV2
             return grade;
         }
 
+        //***********************************************************
+        // Method: Overrided ToString
+        //
+        // Purpose: To return categoryName, assignmentName & grade.
+        //***********************************************************
+
+        public override string ToString()
+        {
+            return m_Name.ToString() + " , " + categories + " , " + assignments + " , " + submissions;
+        }
 
 
         #endregion
